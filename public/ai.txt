@@ -1,0 +1,66 @@
+# ai.txt — AI Crawler Policy for maheshghunnar.in
+# This file controls how AI systems, large language models, and
+# automated AI agents may interact with this website's content.
+# Reference: https://site.ai-txt.com / https://ai.txt
+
+# =============================================================
+# GENERAL AI CRAWLING POLICY
+# =============================================================
+
+# Allow AI-powered search engines to index for search results
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+# =============================================================
+# AI TRAINING DATA POLICY
+# Training on this content for commercial model training is
+# NOT permitted without explicit written consent from the owner.
+# =============================================================
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: omgili
+Disallow: /
+
+User-agent: omgilibot
+Disallow: /
+
+User-agent: Diffbot
+Disallow: /
+
+# =============================================================
+# CONTENT DECLARATION
+# =============================================================
+
+# Content-Type: Portfolio / Professional Profile
+# Owner: Mahesh Ghunnar
+# Contact: Mahesh.ghunnar13@gmail.com
+# LinkedIn: https://linkedin.com/in/mahesh-ghunnar
+# GitHub: https://github.com/mahesh-ghunnar
+# Location: Pune, Maharashtra, India
+# License: All Rights Reserved
+
+# Sitemap
+Sitemap: https://maheshghunnar.in/sitemap.xml

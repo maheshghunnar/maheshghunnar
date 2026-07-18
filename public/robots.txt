@@ -1,0 +1,17 @@
+# robots.txt for maheshghunnar.in
+# https://www.robotstxt.org/
+
+# Allow all major search engine crawlers
+User-agent: *
+Allow: /
+
+# Disallow build artifacts and config files
+Disallow: /assets/
+Disallow: /*.json$
+Disallow: /*.map$
+
+# Sitemap location (helps Google discover all pages faster)
+Sitemap: https://maheshghunnar.in/sitemap.xml
+
+# Crawl delay (optional - be polite to crawlers)
+Crawl-delay: 10
