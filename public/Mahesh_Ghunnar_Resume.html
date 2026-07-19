@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahesh Ghunnar - Senior Software Developer Resume</title>
+  <style>
+    :root {
+      --primary-color: #1e293b; /* slate 800 */
+      --secondary-color: #475569; /* slate 600 */
+      --text-color: #334155; /* slate 700 */
+      --accent-color: #0284c7; /* sky 600 */
+      --border-color: #cbd5e1; /* slate 300 */
+      --background-color: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: var(--text-color);
+      background-color: #f8fafc;
+      line-height: 1.5;
+      padding: 40px 20px;
+    }
+
+    .resume-container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: var(--background-color);
+      padding: 50px 60px;
+      box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+      border-radius: 8px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 25px;
+      border-bottom: 2px solid var(--primary-color);
+      padding-bottom: 15px;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 800;
+      color: var(--primary-color);
+      letter-spacing: -0.025em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .contact-info {
+      font-size: 14px;
+      color: var(--secondary-color);
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+
+    .contact-info span {
+      display: flex;
+      align-items: center;
+    }
+
+    .contact-info span:not(:last-child)::after {
+      content: "|";
+      margin-left: 10px;
+      color: var(--border-color);
+    }
+
+    .links {
+      font-size: 14px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .links a {
+      color: var(--accent-color);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      margin-bottom: 25px;
+    }
+
+    .section-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--primary-color);
+      text-transform: uppercase;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 5px;
+      margin-bottom: 12px;
+      letter-spacing: 0.05em;
+    }
+
+    p.summary {
+      font-size: 14.5px;
+      text-align: justify;
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 8px;
+      font-size: 14px;
+    }
+
+    .skill-category {
+      display: flex;
+      line-height: 1.4;
+    }
+
+    .skill-category-name {
+      font-weight: 700;
+      color: var(--primary-color);
+      min-width: 180px;
+      flex-shrink: 0;
+    }
+
+    .skill-category-items {
+      color: var(--text-color);
+    }
+
+    .job-block {
+      margin-bottom: 20px;
+      page-break-inside: avoid;
+    }
+
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 4px;
+    }
+
+    .job-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--primary-color);
+    }
+
+    .job-company {
+      font-weight: 600;
+      color: var(--accent-color);
+    }
+
+    .job-date-location {
+      font-size: 13.5px;
+      color: var(--secondary-color);
+      font-weight: 500;
+      text-align: right;
+    }
+
+    .project-title {
+      font-size: 14.5px;
+      font-weight: 700;
+      color: var(--secondary-color);
+      margin-top: 6px;
+      margin-left: 12px;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-top: 4px;
+      margin-bottom: 8px;
+    }
+
+    li {
+      font-size: 14px;
+      margin-bottom: 3px;
+      text-align: justify;
+      color: var(--text-color);
+    }
+
+    .nested-bullets {
+      margin-left: 20px;
+      margin-top: 2px;
+      margin-bottom: 4px;
+      list-style-type: circle;
+    }
+
+    .education-block {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    .edu-degree {
+      font-size: 14.5px;
+      font-weight: 700;
+      color: var(--primary-color);
+    }
+
+    .edu-school {
+      font-size: 14px;
+      color: var(--text-color);
+    }
+
+    .edu-date {
+      font-size: 13.5px;
+      color: var(--secondary-color);
+      text-align: right;
+      font-weight: 500;
+    }
+
+    .certification-list {
+      list-style-type: square;
+      margin-left: 20px;
+    }
+
+    .certification-list li {
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+
+    /* Print styling rules */
+    @media print {
+      body {
+        background-color: #ffffff;
+        padding: 0;
+        color: #000000;
+      }
+
+      .resume-container {
+        box-shadow: none;
+        padding: 0;
+        margin: 0;
+        max-width: 100%;
+      }
+
+      .links a {
+        color: var(--primary-color);
+        text-decoration: underline;
+      }
+
+      .section-title {
+        border-bottom-color: #000000;
+      }
+
+      .job-block, .education-block {
+        page-break-inside: avoid;
+      }
+
+      /* Adjust font sizes slightly for print optimization to fit exactly on 2 pages */
+      h1 { font-size: 28px; }
+      .section-title { font-size: 16px; }
+      .job-title { font-size: 15px; }
+      li, p.summary, .skill-category { font-size: 13px; }
+      .job-date-location, .edu-date { font-size: 12.5px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="resume-container">
+    <header>
+      <h1>Mahesh Ghunnar</h1>
+      <div class="contact-info">
+        <span>Pune, Maharashtra, India</span>
+        <span>+91 9545005765</span>
+        <span>Mahesh.ghunnar13@gmail.com</span>
+      </div>
+      <div class="links">
+        <a href="https://linkedin.com/in/maheshghunnar" target="_blank">linkedin.com/in/maheshghunnar</a>
+        <a href="https://maheshghunnar.in" target="_blank">maheshghunnar.in</a>
+      </div>
+    </header>
+
+    <section>
+      <div class="section-title">Professional Summary</div>
+      <p class="summary">
+        Results-driven Senior Full Stack Developer with over 8 years of experience designing, building, and scaling high-performance web applications using the .NET ecosystem (.NET Core, C#, ASP.NET MVC) and modern front-end frameworks (React, JavaScript). Proven track record of delivering end-to-end solutions for MNCs, US-based clients, and e-commerce platforms. Expert in microservices architecture, RESTful API design, database optimization (MS SQL, Neo4j, Redis), and cloud integration (Azure, AWS). Certified Python Programmer with strong agile team leadership experience, dedicated to writing clean, maintainable code using SOLID principles.
+      </p>
+    </section>
+
+    <section>
+      <div class="section-title">Core Skills</div>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <div class="skill-category-name">Programming Languages</div>
+          <div class="skill-category-items">C#, Python, SQL, JavaScript (ES6+), TypeScript, HTML5, CSS3</div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-category-name">Backend Frameworks</div>
+          <div class="skill-category-items">.NET Core, ASP.NET Core MVC, Web API, Entity Framework (EF) Core, LINQ, Microservices, Django, Celery</div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-category-name">Frontend Technologies</div>
+          <div class="skill-category-items">React.js, Redux, jQuery, Bootstrap, Ajax, Responsive Web Design</div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-category-name">Databases & Caching</div>
+          <div class="skill-category-items">MS SQL Server, MySQL, Neo4j (Graph DB), Redis (Distributed Caching)</div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-category-name">Cloud & DevOps</div>
+          <div class="skill-category-items">Microsoft Azure, AWS (S3, EC2), Docker, Git, CI/CD pipelines, Linux/Shell scripting</div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-category-name">Development Tools</div>
+          <div class="skill-category-items">Visual Studio, VS Code, Postman, SSMS, Zebra Barcode Integration</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">Professional Experience</div>
+
+      <div class="job-block">
+        <div class="job-header">
+          <div>
+            <span class="job-title">Associate Consultant</span> – <span class="job-company">Infosys</span>
+          </div>
+          <div class="job-date-location">
+            April 2025 – Present<br>Pune, India
+          </div>
+        </div>
+        <ul>
+          <li>Architect and develop scalable .NET Core web applications using microservices architecture to support enterprise-level workflows.</li>
+          <li>Design and implement RESTful APIs and integrate third-party services, improving data exchange efficiency across systems.</li>
+          <li>Optimize database queries and schema designs in MS SQL Server, reducing system latency and enhancing overall application throughput.</li>
+          <li>Collaborate with cross-functional teams in an Agile environment, contributing to system design, code reviews, and mentoring junior developers.</li>
+          <li>Utilize Azure services and DevOps pipelines for continuous integration and automated deployment, ensuring high system availability.</li>
+        </ul>
+      </div>
+
+      <div class="job-block">
+        <div class="job-header">
+          <div>
+            <span class="job-title">Associate Consultant</span> – <span class="job-company">Eviden (formerly Atos Syntel)</span>
+          </div>
+          <div class="job-date-location">
+            October 2021 – April 2025<br>Pune, India
+          </div>
+        </div>
+        
+        <div class="project-title">Match AI Project</div>
+        <ul class="nested-bullets">
+          <li>Designed and implemented a skill-matching recommendation system utilizing .NET Core, Python, and Neo4j graph database to align benched/allocated employees with internal roles.</li>
+          <li>Integrated Redis distributed caching, which optimized system performance and reduced application load times by 50%.</li>
+          <li>Modernized the legacy user interface, leading to a 30% increase in user satisfaction ratings.</li>
+          <li>Facilitated sprint planning, daily standups, and retrospective meetings, improving team sprint velocity and delivery speed by 15%.</li>
+        </ul>
+
+        <div class="project-title">WISDM Project</div>
+        <ul class="nested-bullets">
+          <li>Developed a dynamic Workforce Management (WFM) portal using ASP.NET 4.5, C#, and MS SQL Server, enhancing client response speed by 25%.</li>
+          <li>Implemented secure OAuth2 authorization protocols, strengthening application security and ensuring compliance with industry standards.</li>
+          <li>Optimized SQL database performance and database transactions, reducing average page response time by 40%.</li>
+        </ul>
+      </div>
+
+      <div class="job-block">
+        <div class="job-header">
+          <div>
+            <span class="job-title">.NET Developer</span> – <span class="job-company">Admobs</span>
+          </div>
+          <div class="job-date-location">
+            September 2020 – October 2021<br>Mumbai, India
+          </div>
+        </div>
+        
+        <div class="project-title">Kray.in Project</div>
+        <ul class="nested-bullets">
+          <li>Built a comprehensive affiliate marketing and content recommendation platform using ASP.NET Core 3.1 MVC, C#, and MS SQL.</li>
+          <li>Developed core business features including personalized dashboards, integrated e-wallets, and custom coupon engines, boosting user retention.</li>
+          <li>Integrated AWS S3 for secure, cost-effective media and asset storage, reducing hosting costs.</li>
+        </ul>
+
+        <div class="project-title">TheMorningBlossom.com Project</div>
+        <ul class="nested-bullets">
+          <li>Developed and managed an e-commerce platform using WordPress, WooCommerce, MySQL, and AWS EC2 to automate gift delivery processes in Mumbai.</li>
+          <li>Redesigned checkout workflows and built personalized user dashboards, driving an 80% increase in revenue and digital transactions.</li>
+        </ul>
+      </div>
+
+      <div class="job-block">
+        <div class="job-header">
+          <div>
+            <span class="job-title">Software Engineer</span> – <span class="job-company">Jeet Electronics Engineering</span>
+          </div>
+          <div class="job-date-location">
+            April 2018 – December 2019<br>Nashik, India
+          </div>
+        </div>
+        
+        <div class="project-title">Daily Production Plan</div>
+        <ul class="nested-bullets">
+          <li>Created a Windows desktop utility using C# and MS SQL Server 2012 to automate production schedule planning and real-time task tracking.</li>
+        </ul>
+
+        <div class="project-title">Five Parts Scanning Software</div>
+        <ul class="nested-bullets">
+          <li>Designed and implemented an automated product validation system integrated with Zebra barcode scanners, ensuring 99.9% quality assurance in parts processing.</li>
+          <li>Utilized Advantech IoT sensors to monitor and aggregate real-time hardware data, processing metrics to deliver system optimization insights.</li>
+        </ul>
+      </div>
+
+      <div class="job-block">
+        <div class="job-header">
+          <div>
+            <span class="job-title">Internship Trainee</span> – <span class="job-company">TechSpiron Systems</span>
+          </div>
+          <div class="job-date-location">
+            March 2017 – June 2017<br>Mumbai, India
+          </div>
+        </div>
+        <ul>
+          <li>Assisted in developing web applications using ASP.NET MVC framework, gaining hands-on experience in C#, SQL, and MVC design patterns.</li>
+        </ul>
+      </div>
+
+      <div class="job-block">
+        <div class="job-header">
+          <div>
+            <span class="job-title">System Administrator</span> – <span class="job-company">Ascellent Technologies</span>
+          </div>
+          <div class="job-date-location">
+            January 2016 – June 2016<br>Aurangabad, India
+          </div>
+        </div>
+        <ul>
+          <li>Administered servers, digital marketing campaigns, SMS dispatch applications, and supported system maintenance and network configuration.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">Education</div>
+      
+      <div class="education-block">
+        <div>
+          <div class="edu-degree">Master of Computer Applications (MCA)</div>
+          <div class="edu-school">Bharati Vidyapeeth’s Institute of Management & Information Technology, Navi Mumbai</div>
+        </div>
+        <div class="edu-date">August 2014 – November 2017</div>
+      </div>
+
+      <div class="education-block">
+        <div>
+          <div class="edu-degree">Bachelor of Science in Information Technology (BSc IT)</div>
+          <div class="edu-school">Deogiri College, Aurangabad (Dr. BAMU)</div>
+        </div>
+        <div class="edu-date">June 2011 – April 2014</div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">Certifications & Awards</div>
+      <ul class="certification-list">
+        <li><strong>PCEP</strong> – Certified Entry-Level Python Programmer (Verification Code: <code>QxxP.7pyw.4ziv</code>)</li>
+        <li><strong>Microsoft Certified</strong>: Azure Fundamentals (AZ-900)</li>
+        <li><strong>Honors</strong>: Bronze Accolade Winner (Infosys, Q3 2024)</li>
+        <li><strong>Awards</strong>: INSTA Award (Atos/Eviden)</li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>

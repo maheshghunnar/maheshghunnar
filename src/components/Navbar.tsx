@@ -104,8 +104,16 @@ export default function Navbar() {
               </a>
             ))}
             <a
+              href="/Mahesh_Ghunnar_Resume.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 text-xs font-semibold tracking-wider uppercase rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 hover:text-white hover:border-zinc-700 transition-all duration-300"
+            >
+              Resume
+            </a>
+            <a
               href="#contact"
-              className="px-4 py-2 text-xs font-semibold tracking-wider uppercase rounded-full bg-gradient-to-r from-accent-cyan/10 to-accent-blue/10 border border-accent-cyan/30 text-accent-cyan hover:from-accent-cyan hover:hover:to-accent-blue hover:text-black hover:border-transparent transition-all duration-500 shadow-md shadow-accent-cyan/5 hover:shadow-accent-cyan/20"
+              className="px-4 py-2 text-xs font-semibold tracking-wider uppercase rounded-full bg-gradient-to-r from-accent-cyan/10 to-accent-blue/10 border border-accent-cyan/30 text-accent-cyan hover:from-accent-cyan hover:to-accent-blue hover:text-black hover:border-transparent transition-all duration-500 shadow-md shadow-accent-cyan/5 hover:shadow-accent-cyan/20"
             >
               Hire Me
             </a>
@@ -164,11 +172,20 @@ export default function Navbar() {
                   </a>
                 </motion.div>
               ))}
-              <motion.div variants={linkVariants} className="mt-8">
+              <motion.div variants={linkVariants} className="mt-8 flex flex-col sm:flex-row gap-4">
+                <a
+                  href="/Mahesh_Ghunnar_Resume.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setIsOpen(false)}
+                  className="px-8 py-3 text-sm font-semibold tracking-wider uppercase rounded-full border border-zinc-800 text-zinc-300 hover:text-white text-center transition-all duration-300"
+                >
+                  View Resume
+                </a>
                 <a
                   href="#contact"
                   onClick={() => setIsOpen(false)}
-                  className="px-8 py-3 text-sm font-semibold tracking-wider uppercase rounded-full bg-gradient-to-r from-accent-cyan to-accent-blue text-black hover:scale-105 active:scale-95 transition-all duration-300 shadow-lg shadow-accent-cyan/20"
+                  className="px-8 py-3 text-sm font-semibold tracking-wider uppercase rounded-full bg-gradient-to-r from-accent-cyan to-accent-blue text-black hover:scale-105 active:scale-95 text-center transition-all duration-300 shadow-lg shadow-accent-cyan/20"
                 >
                   Let's Connect
                 </a>

@@ -74,8 +74,16 @@ export default function Hero() {
             <ArrowRight size={16} className="transition-transform duration-300 group-hover:translate-x-1" />
           </a>
           <a
+            href="/Mahesh_Ghunnar_Resume.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full sm:w-auto px-8 py-3.5 rounded-full bg-zinc-900/60 hover:bg-zinc-900 border border-zinc-800 hover:border-zinc-700 text-zinc-300 hover:text-white font-semibold text-sm transition-all duration-300 flex items-center justify-center gap-2 backdrop-blur-sm"
+          >
+            <span>Download Resume</span>
+          </a>
+          <a
             href="#contact"
-            className="w-full sm:w-auto px-8 py-3.5 rounded-full bg-zinc-900/40 hover:bg-zinc-900 border border-zinc-800 hover:border-zinc-700 text-zinc-300 hover:text-white font-semibold text-sm transition-all duration-300 flex items-center justify-center gap-2 backdrop-blur-sm"
+            className="w-full sm:w-auto px-8 py-3.5 rounded-full bg-transparent hover:bg-zinc-900/20 text-zinc-400 hover:text-white font-semibold text-sm transition-all duration-300 flex items-center justify-center gap-2"
           >
             <span>Get In Touch</span>
           </a>
