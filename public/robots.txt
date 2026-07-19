@@ -10,6 +10,10 @@ Disallow: /assets/
 Disallow: /*.json$
 Disallow: /*.map$
 
+# Allow access to special assets
+Allow: /llms.txt
+Allow: /Mahesh_Ghunnar_Resume.html
+
 # Sitemap location (helps Google discover all pages faster)
 Sitemap: https://maheshghunnar.in/sitemap.xml
 

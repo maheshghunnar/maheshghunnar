@@ -62,5 +62,9 @@ Disallow: /
 # Location: Pune, Maharashtra, India
 # License: All Rights Reserved
 
+# LLM Resources
+# LLM-Friendly Summary: https://maheshghunnar.in/llms.txt
+# Full Resume (HTML): https://maheshghunnar.in/Mahesh_Ghunnar_Resume.html
+
 # Sitemap
 Sitemap: https://maheshghunnar.in/sitemap.xml

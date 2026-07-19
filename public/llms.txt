@@ -1,0 +1,64 @@
+# Mahesh Ghunnar - Senior Full Stack Developer
+
+> Summary of professional experience, core skills, projects, and contact channels for Mahesh Ghunnar.
+
+## Contact Information
+- Website: https://maheshghunnar.in
+- LinkedIn: https://linkedin.com/in/maheshghunnar
+- GitHub: https://github.com/mahesh-ghunnar
+- Email: Mahesh.ghunnar13@gmail.com
+- Phone: +91 9545005765
+- Location: Pune, Maharashtra, India
+
+---
+
+## Profile Summary
+Results-driven Senior Full Stack Developer with over 8 years of experience designing, building, and scaling high-performance web applications using the .NET ecosystem (.NET Core, C#, ASP.NET MVC) and modern front-end frameworks (React, JavaScript). Expert in microservices architecture, RESTful API design, database optimization (MS SQL, Neo4j, Redis), and cloud integration (Azure, AWS). Certified Python Programmer with strong agile team leadership experience, dedicated to writing clean, maintainable code using SOLID principles.
+
+## Core Technical Skills
+- **Languages**: C#, Python, SQL, JavaScript (ES6+), TypeScript, HTML5, CSS3
+- **Backend Frameworks**: .NET Core, ASP.NET Core MVC, Web API, Entity Framework (EF) Core, LINQ, Microservices, Django, Celery
+- **Frontend Technologies**: React.js, Redux, jQuery, Bootstrap, Ajax, Responsive Web Design
+- **Databases & Caching**: MS SQL Server, MySQL, Neo4j (Graph DB), Redis (Distributed Caching)
+- **Cloud & DevOps**: Microsoft Azure, AWS (S3, EC2), Docker, Git, CI/CD pipelines, Linux/Shell scripting
+- **Development Tools**: Visual Studio, VS Code, Postman, SSMS, Zebra Barcode Integration
+
+---
+
+## Professional Experience
+
+### Infosys | Associate Consultant
+*April 2025 - Present*
+- Architect and develop scalable .NET Core web applications using microservices architecture to support enterprise-level workflows.
+- Design and implement RESTful APIs and integrate third-party services, improving data exchange efficiency.
+- Optimize database queries and schema designs in MS SQL Server, reducing system latency and enhancing overall application throughput.
+- Collaborate with cross-functional teams in an Agile environment, contributing to system design, code reviews, and mentoring junior developers.
+- Utilize Azure services and DevOps pipelines for continuous integration and automated deployment, ensuring high system availability.
+
+### Eviden (formerly Atos Syntel) | Associate Consultant
+*October 2021 - April 2025*
+- **Match AI**: Designed and implemented skill-matching recommendation system using .NET Core, Python, and Neo4j. Integrated Redis caching (reduced load times by 50%). Modernized UI (+30% satisfaction).
+- **WISDM**: Developed WFM portal using ASP.NET 4.5, C#, and MS SQL Server (+25% client response speed). Implemented OAuth2 authorization. Optimized SQL performance (-40% page load times).
+
+### Admobs | .NET Developer
+*September 2020 - October 2021*
+- **Kray.in**: Built affiliate marketing and content recommendation platform using ASP.NET Core 3.1 MVC, C#, and MS SQL. Developed dashboards, e-wallets, coupon engines. Integrated AWS S3.
+- **TheMorningBlossom.com**: Developed and managed e-commerce platform using WordPress, WooCommerce, MySQL, and AWS EC2. Redesigned checkout workflow (+80% revenue).
+
+### Jeet Electronics Engineering | Software Engineer
+*April 2018 - December 2019*
+- **Daily Production Plan**: Created desktop planning utility using C# and MS SQL Server 2012.
+- **Five Parts Scanning Software**: Designed product validation systems integrated with Zebra barcode scanners. Integrated Advantech IoT sensors for real-time data monitoring and aggregation.
+
+---
+
+## Education
+- **Master of Computer Applications (MCA)** | Bharati Vidyapeeth’s Institute of Management & Information Technology, Navi Mumbai (Aug 2014 – Nov 2017)
+- **Bachelor of Science in Information Technology (BSc IT)** | Deogiri College, Aurangabad (Dr. BAMU) (Jun 2011 – Apr 2014)
+
+---
+
+## Key Assets
+- [ATS-Friendly HTML Resume](https://maheshghunnar.in/Mahesh_Ghunnar_Resume.html)
+- [PCEP - Certified Entry-Level Python Programmer](https://pythoninstitute.org/certification/) (Code: QxxP.7pyw.4ziv)
+- [Microsoft Certified: Azure Fundamentals (AZ-900)](https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/)
